@@ -16,7 +16,7 @@ services:
       - import_network
     environment:
       - TZ=Asia/Seoul
-  networks:
-    import_network:
-      driver: bridge
-      external: true
+networks:
+  import_network:
+    driver: bridge
+    external: true
