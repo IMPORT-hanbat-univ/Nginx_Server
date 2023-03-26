@@ -17,6 +17,6 @@ services:
     environment:
       - TZ=Asia/Seoul
 networks:
-  import_network:
+  import_cicd_network:
     driver: bridge
     external: true
