@@ -12,8 +12,11 @@ services:
     volumes:
     #docker-compose.yml과 같은 레벨에 둔 nginx.conf를 mount.
       - ./nginx/config/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/geoip.dat:/etc/nginx.d/geoip.dat
+
       - ./nginx/ssl/import.crt:/etc/nginx/ssl/import.crt
       - ./nginx/ssl/import.key:/etc/nginx/ssl/import.key
+      
     networks:
       - import_cicd_network
     environment:
