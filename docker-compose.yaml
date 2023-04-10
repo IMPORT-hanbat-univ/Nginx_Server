@@ -12,7 +12,7 @@ services:
     volumes:
     #docker-compose.yml과 같은 레벨에 둔 nginx.conf를 mount.
       - ./nginx/config/nginx.conf:/etc/nginx/nginx.conf
-      - ./nginx/config/bad_bot.conf:/etc/nginx.d/bad_bot.conf
+      - ./nginx/config/bad_bot.conf:/etc/nginx/conf.d/bad_bot.conf
 
       - ./nginx/ssl/import.crt:/etc/nginx/ssl/import.crt
       - ./nginx/ssl/import.key:/etc/nginx/ssl/import.key
