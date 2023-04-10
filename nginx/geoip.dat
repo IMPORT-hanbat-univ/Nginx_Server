@@ -1,0 +1,2 @@
+# GeoIP database 경로
+geoip_country /usr/share/GeoIP/GeoIP.dat;
