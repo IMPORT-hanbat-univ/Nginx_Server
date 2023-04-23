@@ -19,9 +19,17 @@ services:
 
     networks:
       - import_cicd_network
+      - import_data_network
+      - import_home_network
     environment:
       - TZ=Asia/Seoul
 networks:
   import_cicd_network:
+    driver: bridge
+    external: true
+  import_home_network:
+    driver: bridge
+    external: true
+  import_data_network:
     driver: bridge
     external: true
