@@ -16,7 +16,7 @@ services:
 
       - ./nginx/ssl/import.crt:/etc/nginx/ssl/import.crt
       - ./nginx/ssl/import.key:/etc/nginx/ssl/import.key
-      
+
     networks:
       - import_cicd_network
     environment:
